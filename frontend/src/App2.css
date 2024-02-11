@@ -2,7 +2,6 @@ body {
     width: 100%;
     height: 100vh;
     background-image: url("../public/images.jpeg");
-    /* Ensure this path is correct */
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -23,9 +22,6 @@ p,
     margin-left: 22px;
 }
 
-h4 {
-    /* No specific font styling was mentioned other than margin, so it's omitted here */
-}
 
 .container {
     padding: 20px;
@@ -43,9 +39,6 @@ h4 {
     text-align: center;
 }
 
-img {
-    /* If there's a specific font styling for images, it would typically not apply, but keeping the margin as per your structure */
-}
 
 .light {
     font-weight: 100;
@@ -67,35 +60,33 @@ img {
     border-radius: 5px;
 } */
 .day {
-    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white background */
+    background-color: rgba(255, 255, 255, 0.1); 
     color: white;
     padding: 10px;
-    border-radius: 10px; /* Rounded corners */
+    border-radius: 10px; 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 1rem; /* Adjust the font size as needed */
+    font-size: 1rem; 
 }
-
 .day-name {
-    /* font-size: 0.75rem; Smaller font size for the day name */
-    margin-bottom: 4px; /* Space between the day name and temperature */
+    margin-bottom: 4px;
     font-size: large;
 }
 
 .temp-range {
-    font-size: 1.25rem; /* Larger font size for temperature */
-    font-weight: normal; /* Normal font weight for temperature range */
+    font-size: 1.25rem; 
+    font-weight: normal; 
 }
 
 .temp-high {
-    font-weight: bold; /* Extra bold for the higher temperature */
+    font-weight: bold;
     font-size: xx-large;
 }
 
 .temp-low {
-    font-weight: normal; /* Normal weight for the lower temperature */
-    opacity: 0.75; /* Semi-transparent text for the lower temperature */
+    font-weight: normal; 
+    opacity: 0.75; 
     font-size: medium;
 }
