@@ -1,0 +1,97 @@
+:root {
+    --primary: 237, 94%, 81%;
+    --background: 266, 16%, 92%;
+    --background-secondary: 256, 12%, 12%;
+    --background-secondary-dark: 256, 10%, 10%;
+    --background-secondary-light: 257, 11%, 16%;
+    --text-primary: 0, 0%, 0%;
+    --black: 0, 0%, 0%;
+    --white: 0, 0%, 100%;
+    --quite-gray: 0, 0%, 50%;
+    --grooble: 10, 28%, 93%;
+    --heading-large: 5.6rem;
+    --heading-medium: 3.6rem;
+    --heading-small: 2.4rem;
+    --paragraph: 1.11rem;
+    --navbar-buttons: 2.4rem;
+    --transition-main: .175s .685s .32s;
+    --font-main: "Poppins", sans-serif;
+}
+
+.whole {
+    width: 250px;
+    height: 100vh;
+    transition: width 0.3s ease;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+    background: hsl(var(--background-secondary));
+    color: hsl(var(--text-primary));
+    border-right: 1px solid hsl(var(--background-secondary-dark));
+    padding-top: 60px;
+}
+
+.whole.collapsed {
+    width: 60px;
+    padding-top: 15px;
+}
+
+.whole.collapsed li {
+    margin-top: 40px;
+    margin-left: -10px;
+}
+
+.menu-toggler {
+    position: absolute;
+    top: 15px;
+    right: -35px;
+    background: hsl(var(--primary));
+    color: hsl(var(--white));
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: right 0.3s ease;
+}
+
+.nav.flex-column {
+    width: 100%;
+    height: calc(100% - 60px);
+}
+
+.nav-item.columns {
+    text-align: center;
+    font-size: large;
+    display: block;
+    width: 100%;
+    margin-bottom: 30px; 
+}
+
+.nav-link {
+    display: block;
+    width: 100%;
+    padding: 10px 20px;
+    color: hsl(var(--white));
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.nav-link:hover, .nav-link.active {
+    background-color: hsl(var(--primary));
+    color: hsl(var(--white));
+}
+
+@media (max-width: 768px) {
+    .whole, .whole.collapsed {
+        width: 100%;
+        padding-top: 15px;
+    }
+    .menu-toggler {
+        right: 10px;
+    }
+}
