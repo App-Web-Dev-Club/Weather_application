@@ -61,8 +61,41 @@ img {
     color: white;
 }
 
-.day {
+/* .day {
     background-color: rgba(255, 255, 255, 0.1);
     padding: 10px;
     border-radius: 5px;
+} */
+.day {
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white background */
+    color: white;
+    padding: 10px;
+    border-radius: 10px; /* Rounded corners */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem; /* Adjust the font size as needed */
+}
+
+.day-name {
+    /* font-size: 0.75rem; Smaller font size for the day name */
+    margin-bottom: 4px; /* Space between the day name and temperature */
+    font-size: large;
+}
+
+.temp-range {
+    font-size: 1.25rem; /* Larger font size for temperature */
+    font-weight: normal; /* Normal font weight for temperature range */
+}
+
+.temp-high {
+    font-weight: bold; /* Extra bold for the higher temperature */
+    font-size: xx-large;
+}
+
+.temp-low {
+    font-weight: normal; /* Normal weight for the lower temperature */
+    opacity: 0.75; /* Semi-transparent text for the lower temperature */
+    font-size: medium;
 }
