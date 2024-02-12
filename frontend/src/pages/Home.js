@@ -1,5 +1,6 @@
 import Navbar from "../components/Navbar";
 import "../App2.css";
+// eslint-disable-next-line
 import clouds from "./Capture.PNG";
 export default function Home() {
   return (

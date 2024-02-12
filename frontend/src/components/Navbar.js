@@ -21,12 +21,12 @@ export default function Header() {
                     </Link>
                 </li>
                 <li className="nav-item columns">
-                    <Link to="/link1" className="nav-link">
+                    <Link to="/contact" className="nav-link">
                         <FaLink /> Link 1
                     </Link>
                 </li>
                 <li className="nav-item columns">
-                    <Link to="/link2" className="nav-link">
+                    <Link to="/about" className="nav-link">
                         <FaUserAlt /> Link 2
                     </Link>
                 </li>
