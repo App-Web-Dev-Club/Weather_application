@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from "react-router-dom";
+ // eslint-disable-next-line
 import { FaHome, FaLink, FaUserAlt, FaUserAltSlash, FaBars } from 'react-icons/fa';
 import '../App.css'; // Make sure this path is correct for your project structure
 
@@ -28,11 +29,6 @@ export default function Header() {
                 <li className="nav-item columns">
                     <Link to="/about" className="nav-link">
                         <FaUserAlt /> Link 2
-                    </Link>
-                </li>
-                <li className="nav-item columns">
-                    <Link to="#" className="nav-link disabled" tabIndex="-1" aria-disabled="true">
-                        <FaUserAltSlash /> Disabled
                     </Link>
                 </li>
             </ul>
