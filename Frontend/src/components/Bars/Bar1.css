@@ -1,0 +1,9 @@
+.Bar {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+}
+.radialBar {
+    margin-bottom: 10px;
+    margin-top: 50px;
+}

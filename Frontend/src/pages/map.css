@@ -1,0 +1,9 @@
+model-viewer {
+    min-height: 100%;
+    min-width: 100%;
+}
+button {
+    background: none;
+    border: none;
+    font-size: 20px;
+}

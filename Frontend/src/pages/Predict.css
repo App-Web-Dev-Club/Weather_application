@@ -1,0 +1,19 @@
+.Predict {
+    font-family: 'Glegoo', sans-serif;
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
+@media screen and (max-width: 1200px) {
+    .home{
+      grid-template-columns: 100%;
+      overflow-x: scroll;
+    } 
+  }
+  
+  @media screen and (max-width: 768px) {
+    .home{
+      grid-template-columns: 1fr;
+      width: 100%;
+    } 
+  }

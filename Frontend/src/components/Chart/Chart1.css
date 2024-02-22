@@ -1,0 +1,103 @@
+.Chart {
+  display: flex;
+  flex-direction: column;
+  height: 7rem !important;
+  width: 10rem;
+  border-radius: 0.7rem;
+  color: white;
+  padding: 5rem;
+  position: relative;
+  cursor: pointer;
+  margin: 0.5rem;
+  text-align: center;
+  justify-content: space-evenly;
+  font-weight: 700;
+  font-size: 2ch;
+}
+.Chart > span {
+  background: -webkit-linear-gradient(180deg,#56d364, #79c0ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 24px;
+}
+
+.Expand {
+  position: absolute;
+  top: 10%;
+  width: 70%;
+  height: 70vh;
+  z-index: 9;
+  border-radius: 1rem;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.Expand > span {
+  color: black;
+  font-family: 'Glegoo', sans-serif;
+  font-size: 25px;
+}
+
+.chartContainer {
+  width: 700px;
+}
+
+.middleContainer {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.opt {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-evenly;
+  align-content: center;
+}
+
+@media screen and (max-width: 1200px) {
+  .Chart{
+    height: 9rem;
+    width: 70%;
+  }
+  .Expand {
+    top: 2rem;
+    height: 45vh;
+    left: 6rem;
+  }
+}
+
+@media screen and (max-width: 768px)
+{
+  .Chart{
+    width: 70%;
+  }
+  .Expand {
+    top: 8rem;
+    height: 50%;
+    left: 30px;
+    width: 82%;
+  }
+  .chartContainer {
+    height: 60%;
+    left: 25px;
+    width: 95%;
+
+  }
+}
+.btn {
+  display: inline-block;
+  background: #000;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 15px;
+  font-family: inherit;
+  align-items: center;
+}

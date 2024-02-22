@@ -1,0 +1,35 @@
+.Data {
+    display: flex;
+    flex-direction: column;
+    height: 7rem !important;
+    width: 10rem;
+    border-radius: 0.7rem;
+    color: white;
+    padding: 4.5rem;
+    position: relative;
+    cursor: pointer;
+    margin: 0.5rem;
+    text-align: center;
+    justify-content: space-evenly;
+  }
+
+  .Data > h3 {
+    font-weight: 700;
+    background: -webkit-linear-gradient(180deg,#56d364, #79c0ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  }
+
+  @media screen and (max-width: 1200px) {
+    .Data{
+      height: 9rem;
+      width: 70%;
+    }
+  }
+  
+  @media screen and (max-width: 768px)
+  {
+    .Data{
+      width: 70%;
+    }
+  }

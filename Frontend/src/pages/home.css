@@ -1,0 +1,17 @@
+.home {
+    display: grid;
+    grid-template-columns: auto 20%;
+}
+
+@media screen and (max-width: 1200px) {
+    .home{
+      grid-template-columns: 70% auto;
+    } 
+  }
+  
+  @media screen and (max-width: 768px) {
+    .home{
+      grid-template-columns: 1fr;
+      width: 100%;
+    } 
+  }

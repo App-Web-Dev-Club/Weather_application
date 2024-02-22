@@ -1,0 +1,23 @@
+.Atmospheres {
+    display: flex;
+    grid-template-columns: 20% 20% 20% 20%;
+    justify-content: space-around;
+    text-align: center;
+    margin: 10px;
+    font-family: 'Glegoo', sans-serif;
+}
+@media screen and (max-width: 1200px) {
+    .Atmospheres{
+      flex-direction: column;
+    }
+    .parentContainer{
+      height: 8rem;
+    }
+  }
+  
+  @media screen and (max-width: 768px)
+  {
+    .Atmospheres{
+      width: 90%;
+    }
+  }

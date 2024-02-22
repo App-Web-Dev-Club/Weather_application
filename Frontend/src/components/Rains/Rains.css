@@ -1,0 +1,22 @@
+.Rains {
+    display: flex;
+    grid-template-columns: 20% 20% 20% 20%;
+    justify-content: space-around;
+    text-align: center;
+    margin: 20px;
+}
+@media screen and (max-width: 1200px) {
+    .Rains{
+      flex-direction: column;
+    }
+    .parentContainer{
+      height: 9rem;
+    }
+  }
+  
+  @media screen and (max-width: 768px)
+  {
+    .Rains{
+      width: 90%;
+    }
+  }

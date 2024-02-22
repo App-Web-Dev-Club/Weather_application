@@ -1,0 +1,28 @@
+.Contain {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    font-family: 'Glegoo', sans-serif;
+    color: white;
+    min-height: 100%;
+}
+
+.Conatin > span {
+    font-family: 'Glegoo', sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+}
+@media screen and (max-width: 1200px) {
+    .Conatin{
+        justify-content:flex-start;
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (max-width: 768px)
+{
+    .Conatin{
+        align-items: center;
+    }
+}

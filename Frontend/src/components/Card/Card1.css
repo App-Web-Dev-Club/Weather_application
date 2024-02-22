@@ -1,0 +1,61 @@
+.Card {
+  display: flex;
+  flex: 1;
+  height: 7rem !important;
+  border-radius: 0.7rem;
+  color: white;
+  padding: 1rem;
+  position: relative;
+  cursor: pointer;
+}
+
+/* radial bar */
+.radialBar {
+  flex: 1 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+.CircularProgressbar {
+  width: 4rem !important;
+  overflow: visible;
+}
+.CircularProgressbar-path {
+  stroke-width: 12px !important;
+  
+}
+.CircularProgressbar-trail {
+  display: none;
+}
+.CircularProgressbar-text {
+  fill: linear-gradient(180deg, #3dd247 0%, #50e0f9 100%) !important;
+}
+
+.radialBar > span {
+  font-size: 17px;
+  font-weight: bold;
+}
+
+/* sideDetail*/
+.detail {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-around;
+}
+.detail > span:nth-child(1) {
+  background: -webkit-linear-gradient(180deg,#56d364, #79c0ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+}
+.detail > span:nth-child(2) {
+  font-size: 22px;
+  font-weight: bold;
+  color: "linear-gradient(180deg, #3dd247 0%, #50e0f9 100%)";
+}
+.detail > span:nth-child(3) {
+  font-size: 12px;
+}

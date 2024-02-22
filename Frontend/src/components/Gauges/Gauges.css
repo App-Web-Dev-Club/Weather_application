@@ -1,0 +1,25 @@
+.Gauges {
+    display: flex;
+    gap: 10px;
+    justify-content: space-around;
+    padding-top: 10px;
+  }
+  .parentContainer{
+    width: 100%;
+  }
+
+  @media screen and (max-width: 1200px) {
+    .Gauges{
+      flex-direction: column;
+    }
+    .parentContainer{
+      height: 9rem;
+    }
+  }
+  
+  @media screen and (max-width: 768px)
+  {
+    .Gauges{
+      width: 50%;
+    }
+  }

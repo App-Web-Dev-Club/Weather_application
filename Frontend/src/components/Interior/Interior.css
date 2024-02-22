@@ -1,0 +1,27 @@
+.Interior {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    font-family: 'Glegoo', sans-serif;
+    color: white;
+    min-height: 100%;
+}
+.Interior > span {
+    font-family: 'Glegoo', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+}
+@media screen and (max-width: 1200px) {
+    .Interior{
+        justify-content:flex-start;
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (max-width: 768px)
+{
+    .Interior{
+        align-items: center;
+    }
+}
